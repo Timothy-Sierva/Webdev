@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Timothy Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar {
+            background-color: #222;
+            color: white;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 15px;
+        }
+        .navbar div:first-child {
+            flex-grow: 1;
+            text-align: left; 
+        }
+        .navbar div:nth-child(2) {
+            text-align: center; 
+            flex-grow: 2;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: red;
+        }
+        .social-icons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            size: 100px;
+        }
+        .hire-me {
+            background-color: red;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .about-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            background-color: #eee;
+            text-align: left;
+            gap: 30px;
+        }
+        .about-section img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            
+        }
+        .about-content {
+            max-width: 600px;
+        }
+        .about-content h1 {
+            font-size: 36px;
+        }
+        .about-content p {
+            font-size: 18px;
+            color: #555;
+        }
+        .hire-me {
+            display: inline-block;
+            background-color: red;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .footer {
+            background-color: rgb(114, 67, 5);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-top: auto;
+            border-top: 1px solid white;
+        }
+        .footer div {
+            flex: 1;
+            text-align: center;
+        }
+        .footer .social-icons {
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>Timothy Design</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank">&#x1F426;</a>
+            <a href="https://instagram.com" target="_blank">&#x1F4F7;</a>
+            <a href="https://linkedin.com" target="_blank">&#x1F4E1;</a>
+            <a href="https://facebook.com" target="_blank">&#x1F4F6;</a>
+            <a href="contact.html" class="hire-me">Hire me</a>
+        </div>
+    </div>
+    
+    <div class="about-section" id="about">
+        <img src="images/timothypic.jpg" alt="Timothy's Profile Picture">
+        <div class="about-content">
+            <h1>About Me</h1>
+            <p>I'm Timothy, a student at Our Lady of Fatima University and an aspiring Web Developer. I have experience in web design, content management, and UI design. I love turning creative ideas into functional and visually appealing websites.</p>
+            <div class="social-icons">
+                <a href="https://twitter.com" target="_blank">&#x1F426;</a>
+                <a href="https://instagram.com" target="_blank">&#x1F4F7;</a>
+                <a href="https://linkedin.com" target="_blank">&#x1F4E1;</a>
+                <a href="https://facebook.com" target="_blank">&#x1F4F6;</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div>Web Designer</div>
+        <div>Content Manager</div>
+        <div>UI Design</div>
+    </div>
+</body>
+</html>

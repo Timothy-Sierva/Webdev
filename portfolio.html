@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Timothy Design</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .navbar {
+      background-color: #222;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+    }
+
+    .navbar div:first-child {
+      flex-grow: 1;
+      text-align: left;
+    }
+
+    .navbar div:nth-child(2) {
+      text-align: center;
+      flex-grow: 2;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: red;
+    }
+
+    .social-icons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hire-me {
+      background-color: red;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .portfolio-section {
+      flex: 1;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .portfolio-section h1 {
+      font-size: 36px;
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .project {
+      display: flex;
+      background: white;
+      border: 2px solid black;
+      padding: 20px;
+      width: 60%;
+      align-items: center;
+    }
+
+    .project img {
+      width: 150px;
+      height: auto;
+      margin-right: 20px;
+    }
+
+    .project-content {
+      text-align: left;
+    }
+
+    .footer {
+      background-color: rgb(114, 67, 5);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-top: 1px solid white;
+    }
+
+    .footer div {
+      flex: 1;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div>Timothy Design</div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://twitter.com" target="_blank">&#x1F426;</a>
+      <a href="https://instagram.com" target="_blank">&#x1F4F7;</a>
+      <a href="https://linkedin.com" target="_blank">&#x1F4E1;</a>
+      <a href="https://facebook.com" target="_blank">&#x1F4F6;</a>
+      <a href="contact.html" class="hire-me">Hire me</a>
+    </div> 
+  </div>
+
+  <div class="portfolio-section">
+    <h1>Projects</h1>
+    <div class="projects">
+
+      <div class="project">
+        <img src="https://playerzpot.com/blog/wp-content/uploads/2023/07/quiz.png" alt="Quiz Game">
+        <div class="project-content">
+          <h2>Quiz Game</h2>
+          <p>A simple multiple-choice quiz program written in C that allows users to test their knowledge with randomly generated questions.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="https://app.aranetacity.com/files/establishments/image/8f437442-e49a-4f55-9164-3865f79cf992/tokyo%20tokyo%20araneta%20city.jpg" alt="Ordering System">
+        <div class="project-content">
+          <h2>Ordering System</h2>
+          <p>A mock-up website that presents the business process of Tokyo-Tokyo, designed for a class project.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="https://playerzpot.com/blog/wp-content/uploads/2023/07/quiz.png" alt="Quiz Game">
+        <div class="project-content">
+          <h2>Quiz Game</h2>
+          <p>A simple multiple-choice quiz program written in C that allows users to test their knowledge with randomly generated questions.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="footer">
+    <div>Web Designer</div>
+    <div>Content Manager</div>
+    <div>UI Design</div>
+  </div>
+</body>
+</html>

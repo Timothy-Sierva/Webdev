@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Timothy Design</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f8f3;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .navbar {
+            background-color: #222;
+            color: white;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 15px;
+        }
+        .navbar div:first-child {
+            flex-grow: 1;
+            text-align: left; 
+        }
+        .navbar div:nth-child(2) {
+            text-align: center; 
+            flex-grow: 2;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: red;
+        }
+    .social-icons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .hire-me {
+      background-color: red;
+      padding: 10px 15px;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 20px;
+      flex: 1;
+    }
+
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 4px solid #333;
+    }
+
+    .contact-header {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 50px;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .social-link img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .form-section {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      width: 100%;
+      max-width: 1000px;
+      border-top: 4px solid black;
+      padding-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .form-left, .form-right {
+      flex: 1 1 300px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .form-left input,
+    .form-right textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 2px solid black;
+      font-size: 16px;
+    }
+
+    .form-left input:focus,
+    .form-right textarea:focus {
+      outline: none;
+      border-color: red;
+    }
+
+    .form-right textarea {
+      height: 250px;
+      resize: none;
+    }
+
+    .footer {
+      background-color: rgb(114, 67, 5);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      border-top: 1px solid white;
+    }
+
+    .footer div {
+      flex: 1;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .contact-info {
+        align-items: center;
+        text-align: center;
+      }
+
+      .navbar div:nth-child(2) {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div>Timothy Design</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank">&#x1F426;</a>
+            <a href="https://instagram.com" target="_blank">&#x1F4F7;</a>
+            <a href="https://linkedin.com" target="_blank">&#x1F4E1;</a>
+            <a href="https://facebook.com" target="_blank">&#x1F4F6;</a>
+            <a href="contact.html" class="hire-me">Hire me</a>
+        </div>
+    </div>
+
+  <div class="contact-section">
+    <img src="images/timothypic.jpg" alt="Timothy Sierva" class="profile-img">
+
+    <div class="contact-header">Contact me</div>
+
+    <div class="contact-info">
+      <div class="social-link">
+        <a href="https://facebook.com" target="_blank">&#x1F4F6;</a>
+        <span>Timothy Sierva</span>
+      </div>
+      <div class="social-link">
+        <a href="https://linkedin.com" target="_blank">&#x1F4E1;</a>
+        <span>Timothy Sierva</span>
+      </div>
+      <div class="social-link">
+        <a href="https://instagram.com" target="_blank">&#x1F4F7;</a>
+        <span>Timothy Sierva</span>
+      </div>
+      <div class="social-link">
+        <a href="https://twitter.com" target="_blank">&#x1F426;</a>
+        <span>Timothy Sierva</span>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="form-left">
+        <div class="section-title">Send me an email</div>
+        <input type="text" placeholder="Name:">
+        <input type="email" placeholder="Email Address">
+        <input type="text" placeholder="Subject">
+      </div>
+      <div class="form-right">
+        <textarea placeholder="Your message"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div>Web Designer</div>
+    <div>Content Manager</div>
+    <div>UI Design</div>
+  </div>
+
+</body>
+</html>
